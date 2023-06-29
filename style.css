@@ -1,0 +1,241 @@
+body,
+.first-line-container,
+.second-line-container {
+	overflow-x: hidden;
+}
+
+p:hover,
+li:hover {
+	cursor: default;
+}
+
+body {
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'Harukaze';
+	src: url('./fonts/Harukaze.otf') format('opentype'),
+		url('./fonts/Harukaze.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Hogback';
+	src: url('./fonts/Hogback\ Demo\ Version.otf') format('opentype');
+}
+
+.main-container,
+.first-card-container,
+.second-card-container,
+.first-line,
+.second-line {
+	display: flex;
+}
+
+.main-container {
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-container a {
+	background-color: #f6ec71;
+	color: rgba(166, 39, 21, 255);
+	font-family: 'Harukaze';
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	font-size: 60px;
+	padding: 6px 0;
+	transition: all 0.2s;
+}
+
+.main-container a:hover {
+	background-color: rgba(230, 185, 12, 255);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+	height: 75px;
+}
+
+.main-container img {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	width: 15%;
+	border-radius: 50%;
+	margin-top: 40px;
+	transition: all 0.3s;
+}
+
+.main-container img:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+	transform: scale(1.2);
+}
+
+.first-card-container,
+.second-card-container {
+	margin-top: 50px;
+}
+
+.first-card-container {
+	justify-content: space-around;
+}
+
+.second-card-container {
+	justify-content: center;
+}
+
+.first-card,
+.second-card,
+.third-card,
+.fourth-card {
+	background-color: #ccffff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+	border-radius: 20px;
+	padding: 0 30px;
+}
+
+.second-card {
+	margin-left: -50px;
+}
+
+.title-card,
+.second-title-card,
+.third-title-card,
+.fourth-title-card {
+	transition: all 0.2s;
+}
+
+.title-card,
+.second-title-card,
+.third-title-card {
+	padding: 0 10px;
+}
+
+.fourth-title-card {
+	padding: 0 81px;
+}
+
+.title-card:hover,
+.second-title-card:hover,
+.third-title-card:hover,
+.fourth-title-card:hover {
+	transform: scale(1.1);
+}
+
+.title-card a,
+.second-title-card a,
+.third-title-card a,
+.fourth-title-card a {
+	color: rgba(12, 126, 167, 255);
+	font-family: 'Hogback';
+	text-decoration: none;
+	font-size: 40px;
+}
+
+.content-card-1,
+.content-card-2,
+.content-card-3,
+.content-card-4,
+p {
+	font-family: 'Kanit';
+}
+
+.content-card-1 ol,
+.content-card-2 ol,
+.content-card-3 ol,
+.content-card-4 ol {
+	padding: 0;
+}
+
+.content-card-1 li,
+.content-card-2 li,
+.content-card-3 li,
+.content-card-4 li {
+	padding: 1px;
+}
+
+.first-line-container,
+.second-line-container {
+	background-color: rgba(69, 77, 140, 0.7);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s;
+}
+
+.first-line-container:hover,
+.second-line-container:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+	transform: scale(1.1);
+	cursor: auto;
+}
+
+.first-line-container:hover .first-quote p,
+.second-line-container:hover .second-quote p {
+	font-size: 25px;
+}
+
+.first-line,
+.second-line,
+.first-quote,
+.second-quote {
+	color: white;
+}
+
+.first-quote p,
+.second-quote p {
+	margin: 0;
+}
+
+.first-quote p,
+.second-quote p {
+	font-family: 'Hogback';
+	transition: 1s;
+}
+
+.first-line-container {
+	width: 47%;
+	margin: 125px 0 100px 0;
+	padding: 10px 10px 10px 40px;
+	border-radius: 0 6px 6px 0;
+}
+
+.first-line {
+	align-items: center;
+}
+
+.first-quote {
+	margin: 1px 0 0 623px;
+}
+
+.second-line-container {
+	width: 34.5%;
+	margin: 0 860px;
+	padding: 10px 134px 10px 10px;
+	border-radius: 6px 0 0 6px;
+}
+
+.second-line-container p {
+	white-space: nowrap;
+}
+
+.second-line {
+	align-items: center;
+}
+
+.second-quote {
+	margin: 1px 0 0 475px;
+}
+
+.main-footer {
+	background-color: rgba(2, 48, 146, 0.4);
+	margin-top: 150px;
+	padding: 5px;
+	text-align: center;
+}
+
+.main-footer footer {
+	color: #ffffff;
+	font-family: 'Kanit';
+	font-size: 16px;
+	margin: 0;
+}
+
+.main-footer footer p {
+	margin: 0;
+}
